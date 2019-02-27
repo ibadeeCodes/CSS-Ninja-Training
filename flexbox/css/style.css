@@ -1,0 +1,269 @@
+html{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+*,*:before,*:after
+{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+#wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.upper{
+    max-width: 1100px;
+    border: solid 0.1px #BCBCBC;
+    display: flex;
+    /*#a29bfe*/
+}
+.box1{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 27.33%
+}
+.box1 h4 {
+    padding: 12px 20px;
+    font-weight: 600;
+}
+.box2 {
+    display: flex;
+    flex-direction: column;
+    flex: 8;
+    padding: 30px;
+}
+.box2 h1 {
+    padding: 16px 37px;
+    color: #6c5ce7;
+    font-size: 52px;
+}
+.box2 h2{
+    padding-left: 39px;
+    color:#6c5ce7;
+}
+.social
+{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+}
+.social ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100%;
+}
+.social li{
+    flex: 1;
+    border: solid 0.1px #BCBCBC;
+    display: flex;
+    justify-content: center;
+}
+.social a {
+    display: flex;
+    align-self: center;
+    text-decoration: none;
+}
+.social i {
+    font-size: 40px;
+}
+.upper img{
+    height: 300px;;
+}
+.lower{
+    max-width: 1100px;
+    display: flex;
+    flex: 1;
+    margin-top: 10px;
+}
+.lower.box4 i {
+    margin-right: 12px;
+}
+.box3 i{
+    color:#808080;
+    size: 20px;
+}
+.box4 i{
+    color:#808080;
+}
+.box4{
+    display: flex;
+    flex-direction: column;
+    border: solid 0.1px #BCBCBC;
+}
+.box4 h1{
+    color: #6c5ce7;
+    padding: 8px 20px;
+}
+.box4 h3{
+    padding: 9px 15px;
+}
+.box5{
+    display:flex;
+    flex-direction: column;
+    border: solid 0.1px #BCBCBC;
+    flex:2;
+    height: 320px;
+}
+.box5 h1{
+    color: #6c5ce7;
+    padding: 9px 20px;
+}
+.box5 h3{
+    padding: 9px 15px;
+}
+.attributes {
+    display: flex;
+    flex-direction: column;
+    line-height: 40px;
+    padding: 15px 40px;
+}
+.attributes li {
+    display: flex;
+}
+.attributes h3 {
+    flex-basis: 120px;
+}
+.attributes h4 {
+    margin-left: 40px;
+}
+.progress{
+    padding: 0px 35px
+}
+.progress > * {
+    padding: 5px 0px;
+}
+.progressbar {
+    background-color: #EEEEEE;
+    border-radius: 10px;
+    padding: 1px;
+    width: 100%;
+    position: relative;
+    height: 10px;
+}
+  .progressbar.pb1:before,
+  .progressbar.pb2:before,
+  .progressbar.pb3:before,
+  .progressbar.pb4:before,
+  .progressbar.pb5:before,
+  .progressbar.pb6:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    background: #c4c3c3;
+    border-radius: 10px;
+}
+.progressbar.pb1:before {
+    width: 75%;
+}
+.progressbar.pb2:before {
+    width: 60%;
+}
+.progressbar.pb3:before {
+    width: 40%;
+}
+.progressbar.pb4:before {
+    width: 70%;
+}
+.progressbar.pb5:before {
+    width: 45%;
+}
+.progressbar.pb6:before {
+    width: 50%;
+}
+.progressbar.pb1 h3,
+.progressbar.pb2 h3,
+.progressbar.pb3 h3,
+.progressbar.pb4 h3,
+.progressbar.pb5 h3,
+.progressbar.pb6 h3 {
+    position: absolute;
+    top: -24px;
+    padding: 0px;
+    font-size: 16px;
+    color: #6c5ce7;
+}
+.progressbar.pb1 h3 {
+    left: 75%;
+}
+.progressbar.pb2 h3 {
+    left: 60%;
+}
+.progressbar.pb3 h3 {
+    left: 40%;
+}
+.progressbar.pb4 h3 {
+    left: 70%;
+}
+.progressbar.pb5 h3 {
+    left: 45%;
+}
+.progressbar.pb6 h3 {
+    left: 50%;
+}
+/*media querires*/
+@media (max-width: 1024x){
+}
+@media (max-width: 768px){
+    .upper {
+        flex-direction: column;
+    }
+    .social ul {
+        flex-direction: row;
+    }
+    .social a {
+        padding: 12px 0;
+    }
+    .upper.box1 {
+        flex-direction: row;
+    }
+    .box1 h4 {
+        align-self: center;
+        font-size: 18px;
+        line-height: 2em;
+    }
+}
+@media (max-width: 736px){}
+@media (max-width: 734px){}
+@media (max-width: 684px){}
+@media (max-width: 667px){}
+@media (max-width: 414px){
+    .upper.box1 {
+        flex-direction: column;
+    }
+    .attributes {
+        line-height: 34px;
+        padding: 16px 0px;
+    }
+    .box2 h1 {
+        padding: 15px 0px;
+    }
+    .box2 h2 {
+        padding-left: 0px;
+    }
+    .attributes h4 {
+        margin-left: 15px;
+    }
+    .attributes h3 {
+        flex-basis: 88px;
+    }
+    .box4 h3 {
+        padding: 9px 15px;
+        display: flex;
+    }
+}
+@media (max-width: 412px){
+    .lower {
+        flex-direction: column;
+    }
+}
+@media (max-width: 375px){
+    .lower {
+        flex-direction: column;
+    }
+}
+@media (max-width: 320px){}
